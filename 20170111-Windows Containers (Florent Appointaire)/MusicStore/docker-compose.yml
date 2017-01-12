@@ -1,0 +1,22 @@
+version: '2.1'
+services:
+  db:
+    image: microsoft/mssql-server-windows-express:latest
+    environment:
+      sa_password: "Password1"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+
+  web:
+    image: flodu31/musicstore:latest
+    environment:
+      - "Data:DefaultConnection:ConnectionString=Server=db,1433;Database=MusicStore;User Id=sa;Password=Password1;MultipleActiveResultSets=True"
+    depends_on:
+      - "db"
+    ports:
+      - "5000:5000"
+networks:
+  default:
+    external:
+      name: nat

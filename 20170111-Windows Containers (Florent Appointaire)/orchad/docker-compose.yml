@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+  database:
+    image: microsoft/mssql-server-windows-express
+    environment:
+      sa_password: "Password1!"
+      env attach_dbs: "[{'dbName':'Orchard','dbFiles':['C:\\Temp\\Orchard2.mdf','C:\\Temp\\Orchard2_log.ldf']}]"
+    ports:
+      - "1433:1433" # REMARK: This is currently required, needs investigation
+
+  orchadv2:
+    image: flodu31/orchardpsugfr
+    depends_on:
+      - "database"
+    ports:
+      - "5000:5000"
