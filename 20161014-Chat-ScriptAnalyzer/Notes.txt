@@ -1,0 +1,25 @@
+
+# Rouler ScriptAnalyzer contre un script
+$Result=Invoke-ScriptAnalyzer -Path '.\It Support light.ps1'
+$Groups=$Result|Group-Object -Property rulename
+$Groups|
+Sort-Object -Property count  -Descending| 
+Format-Table -Property count,name
+
+
+# Trouver les regles actuelles
+Get-ScriptAnalyzerRule
+
+# Les regles par default sont stocker dans : 
+#  C:\Program Files\WindowsPowerShell\Modules\PSScriptAnalyzer\1.8.0\Microsoft.Windows.PowerShell.ScriptAnalyzer.BuiltinRules.dll
+
+# Difference entre ScriptAnalyzer et Pester
+# PSSA peut te dire ok tu respectes tout et ton code a l'air correct, et pester te dire y a rien qui marche
+
+
+# Qu'est-ce que PSSharper
+#  Refactoring de code
+#  Suggestions, Proposition de réécriture, alerte et parfois simplification de code
+
+# Qu'est-ce que PSSake
+#  http://laurent-dardenne.developpez.com/#L2-4
