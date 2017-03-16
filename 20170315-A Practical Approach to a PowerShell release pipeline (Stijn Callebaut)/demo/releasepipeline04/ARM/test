@@ -1,0 +1,1 @@
+-runbookName 'script' -runbookUri "$(containerUri)/script.ps1$(containerSAS)" -accountname 'aa-scu2016' -regionId 'West Europe' -runbookType 'Script' -runbookDescription 'Scu via VSTS'
