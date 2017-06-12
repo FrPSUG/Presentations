@@ -1,0 +1,6 @@
+c:\users\g.boge\documents\visual studio 2015\Projects\ScriptDomMeetupExtension\ScriptDomMeetupExtension\obj\Debug\ScriptDomMeetupExtension.csprojResolveAssemblyReference.cache
+c:\users\g.boge\documents\visual studio 2015\Projects\ScriptDomMeetupExtension\ScriptDomMeetupExtension\bin\Debug\ScriptDomMeetupExtension.dll
+c:\users\g.boge\documents\visual studio 2015\Projects\ScriptDomMeetupExtension\ScriptDomMeetupExtension\bin\Debug\ScriptDomMeetupExtension.pdb
+c:\users\g.boge\documents\visual studio 2015\Projects\ScriptDomMeetupExtension\ScriptDomMeetupExtension\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+c:\users\g.boge\documents\visual studio 2015\Projects\ScriptDomMeetupExtension\ScriptDomMeetupExtension\obj\Debug\ScriptDomMeetupExtension.dll
+c:\users\g.boge\documents\visual studio 2015\Projects\ScriptDomMeetupExtension\ScriptDomMeetupExtension\obj\Debug\ScriptDomMeetupExtension.pdb
