@@ -1,0 +1,48 @@
+{
+    "AllNodes":  [
+                     {
+                         "NodeName":  "*",
+                         "TemplateVHDX":  "m:\\template\\win2016.vhdx"
+                     },
+                     {
+                         "VMs":  [
+                                     {
+                                         "generation":  2,
+                                         "VMCpu":  2,
+                                         "path":  "vm1",
+                                         "VHDs":  [
+                                                      {
+                                                          "BlockSizeBytes":  1048576,
+                                                          "Name":  "web.vhdx",
+                                                          "Size":  21474836480
+                                                      },
+                                                      {
+                                                          "BlockSizeBytes":  1048576,
+                                                          "Name":  "log.vhdx",
+                                                          "Size":  21474836480
+                                                      }
+                                                  ],
+                                         "switchname":  "fabric",
+                                         "VMMemory":  2147483648,
+                                         "VMName":  "vm1"
+                                     },
+                                     {
+                                         "generation":  2,
+                                         "VMCpu":  1,
+                                         "path":  "vm2",
+                                         "VHDs":  {
+                                                      "BlockSizeBytes":  1048576,
+                                                      "Name":  "web.vhdx",
+                                                      "Size":  10737418240
+                                                  },
+                                         "switchname":  "fabric",
+                                         "VMMemory":  1073741824,
+                                         "VMName":  "vm2"
+                                     }
+                                 ],
+                         "path":  "m:\\vm\\",
+                         "NodeName":  "lab-xxxxx",
+                         "Role":  "HyperV"
+                     }
+                 ]
+}
