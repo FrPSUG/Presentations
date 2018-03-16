@@ -1,0 +1,46 @@
+{
+    "AllGroups":  [
+                      {
+                          "GroupeName":  "node01",
+                          "VMs":  [
+                                      {
+                                          "IP":  "10.12.0.201",
+                                          "VMName":  "vm-front01",
+                                          "role":  "web",
+                                          "wanIp": "192.168.75.2"
+                                      },
+                                      {
+                                          "IP":  "10.10.0.201",
+                                          "VMName":  "vm-SQL01",
+                                          "role":  "SQL"
+                                      },
+                                      {
+                                          "IP":  "10.11.0.201",
+                                          "VMName":  "vm-bs01",
+                                          "role":  "BS"
+                                      }
+                                  ]
+                      },
+                      {
+                          "GroupeName":  "node02",
+                          "VMs":  [
+                                      {
+                                          "IP":  "10.12.0.202",
+                                          "VMName":  "vm-front02",
+                                          "role":  "web",
+                                          "wanIp": "192.168.75.3"
+                                      },
+                                      {
+                                          "IP":  "10.10.0.202",
+                                          "VMName":  "vm-SQL02",
+                                          "role":  "SQL"
+                                      },
+                                      {
+                                          "IP":  "10.11.0.202",
+                                          "VMName":  "vm-bs02",
+                                          "role":  "BS"
+                                      }
+                                  ]
+                      }
+                  ]
+}
