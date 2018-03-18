@@ -1,0 +1,19 @@
+[
+    {
+      "action": "accept",
+      "auto": false,
+      "auto_type": "multicast",
+      "comment": "string",
+      "destinations": [],
+      "direction": "in",
+      "group": "",
+      "interface": "",
+      "log": false,
+      "name": "string",
+      "services": [],
+      "source_mac_addresses": "",
+      "sources": [],
+      "status": false,
+      "time": ""
+    }
+  ]
