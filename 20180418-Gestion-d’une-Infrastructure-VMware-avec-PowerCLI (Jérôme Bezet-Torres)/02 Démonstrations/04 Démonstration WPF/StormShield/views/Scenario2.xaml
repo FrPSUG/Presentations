@@ -1,0 +1,110 @@
+<Grid
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+	  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
+
+  
+	
+<Grid Margin="20,20,0,0">
+<StackPanel>	
+		<iconPacks:PackIconMaterial Kind="Apps" Height="45" Width="45" Margin="0,10,10,10"/>
+				
+			<StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0">
+				<Label Content="Nombre de Compagnies :" Margin="4,0,0,0" Width="160" FontWeight="Bold"></Label>
+				 <Controls:NumericUpDown Name="NB_Comp" Minimum="0" Maximum="12" Interval="1"  Height="25" Width="90" Margin="30,0,0,0"/> 
+				 <Label Content="Espace disque necessaire :" Margin="70,0,0,0" Width="160" FontWeight="Bold"></Label>
+				 <Label Name="Edisk_SC2" Content="" Height="25" Width="180" Margin="0,0,0,0"></Label>
+			</StackPanel>													
+
+			<StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0">
+				<Label Content="Nombre de VLANs :" Margin="4,0,0,0" Width="130" FontWeight="Bold"></Label>
+				<Label Name="NB_Vlan_SC2" Content="" Height="25" Width="180" Margin="55,0,0,0"></Label>	
+				<Label Content="Besoin en RAM :" Margin="-15,0,0,0" Width="160" FontWeight="Bold"></Label>
+				 <Label Name="B_Ram_SC2" Content="" Height="25" Width="180" Margin="0,0,0,0"></Label>
+			</StackPanel>																										
+
+			<StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0">
+				<Label Content="Liste des VLANs :" Margin="4,0,0,0" Width="130" FontWeight="Bold"></Label>
+				<Label Name="Liste_Vlan_SC2" Content="" Height="25" Width="180" Margin="55,0,0,0"></Label>
+			</StackPanel>	
+			
+      <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,15,0,0">
+				<Button x:Name="Export_SC2" Content="Exporter Vlan Conf" Width="Auto" Background="#B700A300" Foreground="White" BorderThickness="0" Height="40" Margin="5,0,0,0"></Button>
+			</StackPanel>
+			
+				<StackPanel Orientation="Vertical">
+				<Expander Name="Task_SC2" Header="Taches" HorizontalAlignment="Left" Margin="4,10,0,0"
+                  VerticalAlignment="Top" Height="180" Width="450">
+     
+            <Grid HorizontalAlignment="Left" Height="180" VerticalAlignment="Top"
+                  Width="450" Margin="0,0,-2,-12">
+            <Label Name="Working_SC2" Content="Déploiement en cours..." Height="25" Width="270"  Visibility="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,-5,0,0" ></Label>
+			      <StackPanel Orientation="Vertical" Margin="0,5,0,0">
+			       <StackPanel Orientation="Horizontal">
+			           <iconPacks:PackIconOcticons Name="P1_SC2" Kind="PrimitiveDot" Height="5" Width="5" Margin="25,32,0,0" Visibility="1" />
+			            <Label Name="C_P_SC2" Content="Création des PortGroup"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,20,0,0" Visibility="1"/>
+                  <iconPacks:PackIconMaterial Name="Check_PG_SC2" Kind="Check" Visibility="1" Margin="25,25,0,0"/>
+              </StackPanel>
+              <StackPanel Orientation="Horizontal" >
+			           <iconPacks:PackIconOcticons Name="P2_SC2" Kind="PrimitiveDot" Height="5" Width="5" Margin="25,12,0,0" Visibility="1" />
+			            <Label Name="I_App_SC2" Content="Import des appliances"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Visibility="1"/>
+                  <iconPacks:PackIconMaterial Name="Check_IA_SC2" Kind="Check" Visibility="1" Margin="32,5,0,0"/>
+              </StackPanel>
+              <StackPanel Orientation="Horizontal" >
+			           <iconPacks:PackIconOcticons Name="P3_SC2" Kind="PrimitiveDot" Height="5" Width="5" Margin="25,12,0,0" Visibility="1" />
+			            <Label Name="C_Net_SC2" Content="Configuration du réseaux"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Visibility="1"/>
+                  <iconPacks:PackIconMaterial Name="Check_Net_SC2" Kind="Check" Visibility="1" Margin="15,5,0,0"/>
+              </StackPanel>
+              <StackPanel Orientation="Horizontal" >
+			           <iconPacks:PackIconOcticons Name="P4_SC2" Kind="PrimitiveDot" Height="5" Width="5" Margin="25,12,0,0" Visibility="1" />
+			            <Label Name="C_Meta_SC2" Content="Ajout de Métadonnées"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Visibility="1"/>
+                  <iconPacks:PackIconMaterial Name="Check_Met_SC2" Kind="Check" Visibility="1" Margin="27,5,0,0"/>
+              </StackPanel>
+                           
+              </StackPanel>
+              </Grid>
+        
+</Expander>
+			
+      </StackPanel>
+			
+		</StackPanel>
+ 
+ 
+</Grid>	
+<Grid>
+<Grid.Resources>
+    <Style TargetType="{x:Type Button}">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type Button}">
+            <Border x:Name="Border" Background="RoyalBlue" CornerRadius="4">
+              <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </Border>
+            <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="Border" Property="Background" Value="#BC939492" />
+              </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                <Setter TargetName="Border" Property="Background" Value="#FF58A309" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+  </Grid.Resources>
+<StackPanel VerticalAlignment="Bottom" Orientation="Vertical" HorizontalAlignment="Center" Margin="0,0,0,0">
+						<StackPanel Orientation="Horizontal" Margin="0,2,0,0">
+	          <Button x:Name="Check2" Content="Estimation des ressources" Width="390" Background="#00a300" Foreground="White" BorderThickness="0" Height="40" Margin="1,0,0,0"></Button>	
+	          <Button x:Name="Run_Deployment2" Content="Deploiement Scenario 2" Width="390" Background="#00a300" Foreground="White" BorderThickness="0" Height="40" Margin="5,0,0,0"></Button>
+						
+						</StackPanel>
+					</StackPanel>
+</Grid>
+		
+
+	 	
+		
+</Grid>

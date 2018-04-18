@@ -1,0 +1,60 @@
+<Grid
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+	  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
+
+  
+	
+	
+	
+<Grid Margin="20,20,0,0">
+
+<StackPanel>	
+		<iconPacks:PackIconModern Kind="Clean" Height="45" Width="45" Margin="0,10,10,10"/>
+			
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" FlowDirection="LeftToRight" Margin="0,0,0,0">
+				
+				<GroupBox Header="Scénario 1" HorizontalAlignment="Left" Margin="0,0,0,0"
+                  VerticalAlignment="Top" Height="180" Width="263">
+            <Grid HorizontalAlignment="Left" Height="226" VerticalAlignment="Top"
+                  Width="253" Margin="0,0,-2,-12">
+                <Label Content="Entrez les paramètres."
+                       HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                <Label  Content="Nombre de Groupes" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"></Label>
+                <Controls:NumericUpDown Name="NB_SC1" Minimum="2" Maximum="20" Interval="1" Height="25" Width="90" HorizontalAlignment="Left" Margin="14,70,0,0" VerticalAlignment="Top"/>
+                <CheckBox  Name="DP_SC1" Content="Delete PortGroup " HorizontalAlignment="Left"
+                          Margin="14,105,0,0" VerticalAlignment="Top" IsChecked="True" IsEnabled="False"/>
+            </Grid>
+        </GroupBox>
+		
+				<GroupBox Header="Scénario 2" HorizontalAlignment="Left" Margin="40,0,0,0"
+                  VerticalAlignment="Top" Height="180" Width="263">
+            <Grid HorizontalAlignment="Left" Height="226" VerticalAlignment="Top"
+                  Width="253" Margin="0,0,-2,-12">
+                <Label Content="Entrez les paramètres."
+                       HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                <Label   Content="Nombre de Compagnies" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"></Label>
+                <Controls:NumericUpDown Name="NB_SC2" Minimum="2" Maximum="12" Interval="1" Height="25" Width="90" HorizontalAlignment="Left" Margin="14,70,0,0" VerticalAlignment="Top"/>
+              <CheckBox Name="DP_SC2" Content="Delete PortGroup " HorizontalAlignment="Left"
+                          Margin="14,105,0,0" VerticalAlignment="Top" IsChecked="True" IsEnabled="False"/>
+            </Grid>
+        </GroupBox>
+				
+	          
+						
+						</StackPanel>
+				<StackPanel VerticalAlignment="Bottom" Orientation="Horizontal"  Margin="0,10,0,0">		
+						<Button x:Name="Clean_1" Content="Clean Scenario 1" Width="390" Background="#CEE71414" Foreground="White" BorderThickness="0" Height="40" Margin="-18,157,0,0"></Button>	
+	          <Button x:Name="Clean_2" Content="Clean Scenario 2" Width="390" Background="#CEE71414" Foreground="White" BorderThickness="0" Height="40" Margin="5,157,0,0"></Button>										
+</StackPanel>
+					</StackPanel>
+				
+</Grid>	
+	
+
+</Grid>
+		
+
+	 	
+		
