@@ -1,0 +1,1 @@
+"powershell.scriptanalysis.settingspath": "c:\\users\\<user>\\AppData\\Roaming\\Code\\User\\psscriptanalyzerrules.settings.psd1"
