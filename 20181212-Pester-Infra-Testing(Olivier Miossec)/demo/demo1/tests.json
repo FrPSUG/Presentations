@@ -1,0 +1,17 @@
+{
+    "sql":  [
+                {
+                    "db":  [
+                               "db1",
+                               "db2"
+                           ],
+                    "name":  "peste-db01"
+                }
+            ],
+    "web":  [
+                {
+                    "name":  "pester-web01",
+                    "site":  "http://pester-web01"
+                }
+            ]
+}
