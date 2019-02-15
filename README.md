@@ -2,10 +2,20 @@
 
 Ce depot contient les documents de nos rencontres (Presentation pptx, ps1, ...)
 
+This repository contains the presentation materials of our past meetings.
+
+## Participer a nos rencontres
 * [S'inscrire a nos prochaines rencontres](https://www.meetup.com/FrenchPSUG)
 * [Enregistrements des meetings](https://www.youtube.com/frenchpowershellusergroup)
 
-*[Proposer une presentation](/issues/new)*
+## Etre presentateur
+
+Nous sommes a la recherche de presentateurs !
+<b>[Proposer une presentation](https://github.com/FrPSUG/Presentations/issues/new)</b>
+
+Nous avons 2 formats:
+* Demo de 10 minutes (Demo eclair / Lightning demo)
+* Session de 45 minutes avec 10 minutes de questions
 
 ## Meetings
 
