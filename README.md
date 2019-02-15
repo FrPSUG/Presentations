@@ -5,7 +5,7 @@ Ce depot contient les documents de nos rencontres (Presentation pptx, ps1, ...)
 * [S'inscrire a nos prochaines rencontres](https://www.meetup.com/FrenchPSUG)
 * [Enregistrements des meetings](https://www.youtube.com/frenchpowershellusergroup)
 
-*[Proposer une presentation](/issues/new)*
+<b>[Proposer une presentation](https://github.com/FrPSUG/Presentations/issues/new)</b>
 
 ## Meetings
 
