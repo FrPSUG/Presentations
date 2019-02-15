@@ -1,6 +1,8 @@
 # Presentations
 
 Ce depot contient les documents de nos rencontres (Presentation pptx, ps1, ...)
+This repository contains the presentation materials of our past meetings.
+
 
 * [S'inscrire a nos prochaines rencontres](https://www.meetup.com/FrenchPSUG)
 * [Enregistrements des meetings](https://www.youtube.com/frenchpowershellusergroup)
