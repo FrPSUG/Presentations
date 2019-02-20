@@ -1,0 +1,32 @@
+
+trigger:
+- master
+
+pool:
+  vmImage: VS2017-Win2016
+
+variables:
+  ModuleName: 'PSModuleSampleA'
+  ModuleVersion: '0.0.2'
+
+steps:
+- task: PowerShell@2
+  displayName: BuildScript
+  inputs:
+    targetType: filePath
+    filePath: '$(System.DefaultWorkingDirectory)\azdo-build.ps1'
+
+
+- task: richardfennellBM.BM-VSTS-PesterRunner-Task.Pester-Task.Pester@8
+  displayName: PesterUnitTest
+  inputs:
+    scriptFolder: '$(System.DefaultWorkingDirectory)\tests\*.Tests.ps1'
+  continueOnError: true
+
+
+- task: PublishTestResults@2
+  displayName: 'Publish Test Results **/TEST-*.xml'
+  inputs:
+    testResultsFormat: NUnit
+    mergeTestResults: true
+    failTaskOnFailedTests: true
