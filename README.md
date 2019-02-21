@@ -51,3 +51,10 @@ Nous avons 2 formats:
 |2019-02-06|PowerShell Lightning demos|multiple|[meetup](https://www.meetup.com/FrenchPSUG/events/258259294/)|[video](https://www.youtube.com/watch?v=89DVbbjLLCQ)|
 |2019-02-10|Automatiser le build de vos modules PowerShell|Francois-Xavier Cat|[meetup](https://www.meetup.com/FrenchPSUG/events/257983484/)|[video](https://www.youtube.com/watch?v=ldDtE_KksxM)|
 |2019-02-19|Powershell & Azure DevOps|Olivier Miossec|[meetup](https://www.meetup.com/FrenchPSUG/events/258451803/)|[video](https://www.youtube.com/watch?v=_VoDJu0tnsk)|
+|2019-02-26|PowerShell Lightning demos|multiple|[meetup](https://www.meetup.com/FrenchPSUG/events/258677945)|[video](https://www.youtube.com/watch?v=3OR143IPQ4o)|
+|2019-03-12|Déployer, planifier vos scripts PowerShell sur votre parc avec Rundeck|Damien Van Robaeys|[meetup](https://www.meetup.com/FrenchPSUG/events/258369686/)|[video](https://www.youtube.com/watch?v=QGc9-V6Ez78)|
+
+
+
+
+
