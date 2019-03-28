@@ -1,0 +1,52 @@
+{
+  "properties": {
+    "lenses": {
+      "0": {
+        "order": 0,
+        "parts": {
+          "0": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "colSpan": 4,
+              "rowSpan": 2
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "accountResourceId",
+                  "value": "/subscriptions/your-subscription-id/resourceGroups/resource-group-where-Automation-Account-is-located/providers/Microsoft.Automation/automationAccounts/Automation-Account-Name"
+                }
+              ],
+              "type": "Extension/Microsoft_Azure_Automation/Blade/QuotaAndPricingBlade/Lens/UsageLens/PartInstance/QuotaSummaryPart",
+              "asset": {
+                "idInputName": "accountResourceId",
+                "type": "Account"
+              }
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "model": {
+        "timeRange": {
+          "value": {
+            "relative": {
+              "duration": 24,
+              "timeUnit": 1
+            }
+          },
+          "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+        }
+      }
+    }
+  },
+  "name": "My Dashboard - Azure Automation",
+  "type": "Microsoft.Portal/dashboards",
+  "location": "INSERT LOCATION",
+  "tags": {
+    "hidden-title": "My Dashboard - Azure Automation"
+  },
+  "apiVersion": "2015-08-01-preview"
+}
