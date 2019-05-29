@@ -22,7 +22,7 @@ Nous avons 2 formats:
 | Date | Sujet | Presentateur | Meetup | Video |
 |---|---|---|---|---|
 ||||||
-|2016-09-20|Analyse syntaxique de donnees avec Microsoft PowerShell|Francois-Xavier Cat|[meetup](https://www.meetup.com/FrenchPSUG/events/232807877/)|[video](https://www.youtube.com/watch?v=sCd8YufeyUI)|
+|2016-09-20 First|Analyse syntaxique de donnees avec Microsoft PowerShell|Francois-Xavier Cat|[meetup](https://www.meetup.com/FrenchPSUG/events/232807877/)|[video](https://www.youtube.com/watch?v=sCd8YufeyUI)|
 |2016-10-18|Utiliser les PowerShell Classes|Stephane Van Gulick|[meetup](https://www.meetup.com/FrenchPSUG/events/232808635/)|[video](https://www.youtube.com/watch?v=OuupQjlibAk)|
 |2016-10-27|Atelier sur Git et Visual Studio Code|Louis Lejuez|[meetup](https://www.meetup.com/FrenchPSUG/events/234908952/)|[video](https://www.youtube.com/watch?v=XTylo_RW8Fg)|
 |2016-11-16|PowerShell et Unity|Micky Balladelli|[meetup](https://www.meetup.com/FrenchPSUG/events/232810944/)|[video](https://www.youtube.com/watch?v=Rzjah8bvEFE)|
