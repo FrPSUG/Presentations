@@ -20,7 +20,7 @@ Nous avons 2 formats:
 ## Meetings
 
 | Date | Sujet | Presentateur | Meetup | Video |
-|---|---|---|---|---|
+|:---:|---|---|---|---|
 ||||||
 |2016-09-20 First|Analyse syntaxique de donnees avec Microsoft PowerShell|Francois-Xavier Cat|[meetup](https://www.meetup.com/FrenchPSUG/events/232807877/)|[video](https://www.youtube.com/watch?v=sCd8YufeyUI)|
 |2016-10-18|Utiliser les PowerShell Classes|Stephane Van Gulick|[meetup](https://www.meetup.com/FrenchPSUG/events/232808635/)|[video](https://www.youtube.com/watch?v=OuupQjlibAk)|
