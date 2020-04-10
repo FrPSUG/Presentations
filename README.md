@@ -54,8 +54,8 @@ Nous avons 2 formats:
 |2019-02-26|PowerShell Lightning demos|multiple|[meetup](https://www.meetup.com/FrenchPSUG/events/258677945)|[video](https://www.youtube.com/watch?v=3OR143IPQ4o)|
 |2019-03-12|Déployer, planifier vos scripts PowerShell sur votre parc avec Rundeck|Damien Van Robaeys|[meetup](https://www.meetup.com/FrenchPSUG/events/258369686/)|[video](https://www.youtube.com/watch?v=QGc9-V6Ez78)|
 |2019-05-28|PowerShell Lightning demos|multiple|[meetup](https://www.meetup.com/FrenchPSUG/events/260177712/)|[video](https://www.youtube.com/watch?v=5DpeGobiof0)|
-|2020-02-14|Montre moi ton Profile !|[Laurent LIENHARD](https://twitter.com/IronTUX)|[meetup](https://www.meetup.com/fr-FR/FrenchPSUG/events/267017361/)|[video]()|
-
+|2020-02-14|Montre moi ton Profile !|[Laurent LIENHARD](https://twitter.com/IronTUX)|[meetup](https://www.meetup.com/fr-FR/FrenchPSUG/events/267017361/)|[video](https://www.youtube.com/watch?v=kRwxrg7c94o&t=28s)|
+|2020-04-08|GitHub Action + PowerShell + Azure|[Olivier Miossec](https://about.me/omiossec)|[meetup](https://www.meetup.com/fr-FR/FrenchPSUG/events/269779814/)|[video](https://www.youtube.com/watch?v=kRwxrg7c94o&t=2s)|
 Missing presentation(s) in the list ? Please consider opening a Pull Request :)
 
 

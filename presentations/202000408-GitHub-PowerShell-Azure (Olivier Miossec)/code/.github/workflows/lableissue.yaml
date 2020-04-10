@@ -1,0 +1,13 @@
+name: issue-auto-label
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Naturalclar/issue-action@v1.0.0
+        with:
+          labels: '["Demo FRPSUG"]'
+          github-token: "${{ secrets.GITHUB_TOKEN }}"

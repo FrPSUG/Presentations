@@ -1,0 +1,12 @@
+name: issue-first-users
+
+on: [issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: '# Greetin for the FRPSUG Member.\nThis is your first issue here\nThis is the reponse of GitHub Actions'

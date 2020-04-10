@@ -1,0 +1,21 @@
+name: 'AzurePowerShellArm-ttk'
+author: 'omiossec'
+description: 'Perform ARM-TTK test against ARM Templates'
+branding:
+  icon: 'cloud'
+  color: 'blue'
+inputs:
+  directory:
+    description: 'Directory to test'
+    default: "."
+    required: false
+  template:
+    description: 'Template to test'
+    default: "azuredeploy.json"
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.directory }}
+    - ${{ inputs.template }}
