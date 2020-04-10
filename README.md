@@ -20,9 +20,9 @@ Nous avons 2 formats:
 ## Meetings
 
 | Date | Sujet | Presentateur | Meetup | Video |
-|---|---|---|---|---|
+|:---:|---|---|---|---|
 ||||||
-|2016-09-20|Analyse syntaxique de donnees avec Microsoft PowerShell|Francois-Xavier Cat|[meetup](https://www.meetup.com/FrenchPSUG/events/232807877/)|[video](https://www.youtube.com/watch?v=sCd8YufeyUI)|
+|2016-09-20 First|Analyse syntaxique de donnees avec Microsoft PowerShell|Francois-Xavier Cat|[meetup](https://www.meetup.com/FrenchPSUG/events/232807877/)|[video](https://www.youtube.com/watch?v=sCd8YufeyUI)|
 |2016-10-18|Utiliser les PowerShell Classes|Stephane Van Gulick|[meetup](https://www.meetup.com/FrenchPSUG/events/232808635/)|[video](https://www.youtube.com/watch?v=OuupQjlibAk)|
 |2016-10-27|Atelier sur Git et Visual Studio Code|Louis Lejuez|[meetup](https://www.meetup.com/FrenchPSUG/events/234908952/)|[video](https://www.youtube.com/watch?v=XTylo_RW8Fg)|
 |2016-11-16|PowerShell et Unity|Micky Balladelli|[meetup](https://www.meetup.com/FrenchPSUG/events/232810944/)|[video](https://www.youtube.com/watch?v=Rzjah8bvEFE)|
@@ -53,8 +53,10 @@ Nous avons 2 formats:
 |2019-02-19|Powershell & Azure DevOps|Olivier Miossec|[meetup](https://www.meetup.com/FrenchPSUG/events/258451803/)|[video](https://www.youtube.com/watch?v=_VoDJu0tnsk)|
 |2019-02-26|PowerShell Lightning demos|multiple|[meetup](https://www.meetup.com/FrenchPSUG/events/258677945)|[video](https://www.youtube.com/watch?v=3OR143IPQ4o)|
 |2019-03-12|Déployer, planifier vos scripts PowerShell sur votre parc avec Rundeck|Damien Van Robaeys|[meetup](https://www.meetup.com/FrenchPSUG/events/258369686/)|[video](https://www.youtube.com/watch?v=QGc9-V6Ez78)|
+|2019-05-28|PowerShell Lightning demos|multiple|[meetup](https://www.meetup.com/FrenchPSUG/events/260177712/)|[video](https://www.youtube.com/watch?v=5DpeGobiof0)|
+|2020-02-14|Montre moi ton Profile !|[Laurent LIENHARD](https://twitter.com/IronTUX)|[meetup](https://www.meetup.com/fr-FR/FrenchPSUG/events/267017361/)|[video]()|
 
-
+Missing presentation(s) in the list ? Please consider opening a Pull Request :)
 
 
 

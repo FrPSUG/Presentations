@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.1"
+  templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>MyCompleteTemplateModule</name>
+    <id>acd176ec-36cd-4e1f-80ad-73c38512ba76</id>
+    <version>0.0.1</version>
+    <title>Full Module Template</title>
+    <description>Full Module Template</description>
+    <author>Laurent LIENHARD</author>
+    <tags>Module, Complete, FRPSUG</tags>
+  </metadata>
+  <parameters>
+  
+  </parameters>
+  
+  <content>
+  
+  </content>
+</plasterManifest>
