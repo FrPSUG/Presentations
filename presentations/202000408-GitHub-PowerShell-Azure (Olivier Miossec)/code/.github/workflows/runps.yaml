@@ -1,0 +1,37 @@
+name: PS-On-Github
+# The name of the Workflow
+on:
+    push:
+      branches:
+        - master
+# Trigered by a Push on the Master branch 
+jobs:
+# Jobs Collection
+  testPowerShellWindows:
+    runs-on: windows-latest
+  # Job Definition
+    steps:
+    # Steps Collection
+      - uses: actions/checkout@v1
+      - name: Echo-PsVersion
+        shell: pwsh
+        run: $psversiontable
+      # Step Definition
+
+  testPowerShellLinux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Echo-PsVersion
+        shell: pwsh
+        run: $psversiontable
+
+  testPowerShellMac:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Echo-PsVersion
+        shell: pwsh
+        run: $psversiontable 

@@ -1,0 +1,40 @@
+name: 'AzurePowerShellArm-Deploy'
+author: 'omiossec'
+description: 'Deploy a Template'
+branding:
+  icon: 'cloud'
+  color: 'green'
+inputs:
+  directory:
+    description: 'ARM Templates Directory'
+    default: "."
+    required: false
+  template:
+    description: 'Default template name'
+    default: "azuredeploy.json"
+    required: false
+  appID:
+    description: 'The Service Principal Application ID'
+    required: true
+  spSecret:
+    description: 'The Service Princtipal Secret'
+    required: true
+  tenantID:
+    description: 'The Tenant ID'
+    required: true
+  subscriptionID:
+    description: 'The Subscription ID'
+    required: true
+  resourceGroup:
+    description: 'The Resource group name to deploy to'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.directory }}
+    - ${{ inputs.appID }}
+    - ${{ inputs.spSecret }}
+    - ${{ inputs.tenantID }}
+    - ${{ inputs.subscriptionID }}
+    - ${{ inputs.resourceGroup }}
