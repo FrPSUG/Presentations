@@ -55,7 +55,7 @@ Nous avons 2 formats:
 |2019-03-12|Déployer, planifier vos scripts PowerShell sur votre parc avec Rundeck|Damien Van Robaeys|[meetup](https://www.meetup.com/FrenchPSUG/events/258369686/)|[video](https://www.youtube.com/watch?v=QGc9-V6Ez78)|
 |2019-05-28|PowerShell Lightning demos|multiple|[meetup](https://www.meetup.com/FrenchPSUG/events/260177712/)|[video](https://www.youtube.com/watch?v=5DpeGobiof0)|
 |2019-10-12|PowerShell Saturday @ Paris|multiple|[meetup](https://www.meetup.com/FrenchPSUG/events/261869405/)|n/a|
-|2020-02-14|Montre moi ton Profile !|[Laurent LIENHARD](https://twitter.com/IronTUX)|[meetup](https://www.meetup.com/fr-FR/FrenchPSUG/events/267017361/)|[video](https://www.youtube.com/watch?v=kRwxrg7c94o&t=28s)|
+|2020-01-14|Montre moi ton Profile !|[Laurent LIENHARD](https://twitter.com/IronTUX)|[meetup](https://www.meetup.com/fr-FR/FrenchPSUG/events/267017361/)|[video](https://www.youtube.com/watch?v=kRwxrg7c94o&t=28s)|
 |2020-03-10|PowerShell 7 - Quelles sont les nouveautés ?|[Francois-Xavier Cat](https://twitter.com/lazywinadmin)|[meetup](https://www.meetup.com/FrenchPSUG/events/267635397/)|[video](https://www.youtube.com/watch?v=nqb6s0PYfM0)|
 |2020-04-08|GitHub Action + PowerShell + Azure|[Olivier Miossec](https://about.me/omiossec)|[meetup](https://www.meetup.com/fr-FR/FrenchPSUG/events/269779814/)|[video](https://www.youtube.com/watch?v=teVY7rtI-zc)|
 |2020-04-28|PowerShell AD: Gestion des GPO |[Jérôme Bezet Torres](https://jm2k69.github.io/)|[meetup](https://www.meetup.com/FrenchPSUG/events/270119699/)|[video](https://www.youtube.com/watch?v=MzazXfkysVU&t=22s)|
