@@ -57,6 +57,7 @@ Nous avons 2 formats:
 |2020-02-14|Montre moi ton Profile !|[Laurent LIENHARD](https://twitter.com/IronTUX)|[meetup](https://www.meetup.com/fr-FR/FrenchPSUG/events/267017361/)|[video](https://www.youtube.com/watch?v=kRwxrg7c94o&t=28s)|
 |2020-03-10|PowerShell 7 - Quelles sont les nouveautés ?|[Francois-Xavier Cat](https://twitter.com/lazywinadmin)|[meetup](https://www.meetup.com/FrenchPSUG/events/267635397/)|[video](https://www.youtube.com/watch?v=nqb6s0PYfM0)|
 |2020-04-08|GitHub Action + PowerShell + Azure|[Olivier Miossec](https://about.me/omiossec)|[meetup](https://www.meetup.com/fr-FR/FrenchPSUG/events/269779814/)|[video](https://www.youtube.com/watch?v=teVY7rtI-zc)|
+|2020-04-28|PowerShell AD: Gestion des GPO |[Jérôme Bezet Torres](https://jm2k69.github.io/)|[meetup](https://www.meetup.com/FrenchPSUG/events/270119699/)|[video](https://www.youtube.com/watch?v=MzazXfkysVU&t=22s)|
 
 Missing presentation(s) in the list ? Please consider opening a Pull Request :)
 
