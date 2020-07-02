@@ -1,0 +1,30 @@
+apiVersion: 2018-10-01
+location: westeurope
+name: azuredemoaci
+type: Microsoft.ContainerInstance/containerGroups
+properties:
+  osType: Linux
+  ipAddress:
+    type: Public
+    dnsNameLabel: azuredemoaci-omc01
+    ports:
+    - protocol: tcp
+      port: '8000'
+  imageRegistryCredentials:
+  - server: omcdockerreg01.azurecr.io
+    username: omcdockerreg01
+    password: <PASSWORD>
+  restartPolicy: Always
+  containers:
+    - name: omcdemoaci-front
+      properties:
+        image: omcdockerreg01.azurecr.io/demoaci/omcdemoaci-frpsug:latest
+        command: ['pwsh', '/entrypoint.ps1']
+        ports:
+          - port: 8000
+        resources:
+          requests:
+            cpu: 1.0
+            memoryInGB: 1.0
+
+
