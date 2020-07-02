@@ -1,9 +1,9 @@
 Import-module UniversalDashboard.Community -Force 
 
-$TenantID = "c986548e-494d-4f3a-b716-42287a39531b"
-$ClientID ="5830b465-8097-4bf6-b8cb-69fc1eda7299"
-$ClientSecret = "84dc2b28-5847-4ddf-822f-b4801966c537 "
-$SubscriptionID = "a3cefae9-1467-47b8-9c8e-ab1e9717d7d3"
+$TenantID = "XXXXXXX"
+$ClientID = "XXXXXXX"
+$ClientSecret = "XXXXXXX"
+$SubscriptionID = "XXXXXXX"
 
 $TokenEndpoint = "https://login.windows.net/$($TenantID)/oauth2/token"
 
