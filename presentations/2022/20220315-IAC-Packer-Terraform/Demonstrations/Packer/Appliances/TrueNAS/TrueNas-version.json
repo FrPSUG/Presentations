@@ -1,0 +1,11 @@
+{
+  "version": "0.1.7",
+  "description": "TrueNas Appliance-12U8",
+  "vm_name": "TrueNas-Appliance-12U8",
+  "iso_checksum": "17d91b951482f8643e692772c481b4b106e21e5805b13c2f289ed926efd239dd",
+  "iso_url": "https://download.freenas.org/12.0/STABLE/U8/x64/TrueNAS-12.0-U8.iso",
+  "numvcpus": "4",
+  "ramsize": "8192",
+  "guest_username": "root",
+  "guest_password": "TrueNas123*"
+}

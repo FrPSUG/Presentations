@@ -1,0 +1,12 @@
+#cloud-config
+vyos_config_commands:
+  - set system host-name 'RTRLAB'
+  - set interfaces ethernet eth1 address '172.18.254.254/16'
+  - set service dhcp-server shared-network-name LAN subnet 172.18.0.0/16 default-router '172.18.254.254'
+  - set service dhcp-server shared-network-name LAN subnet 172.18.0.0/16 dns-server '1.1.1.1'
+  - set service dhcp-server shared-network-name LAN subnet 172.18.0.0/16 domain-name 'MSI.lab'
+  - set service dhcp-server shared-network-name LAN subnet 172.18.0.0/16 range 0 start '172.18.0.1'
+  - set service dhcp-server shared-network-name LAN subnet 172.18.0.0/16 range 0 stop '172.18.0.200'
+  - set nat source rule 100 outbound-interface 'eth0'
+  - set nat source rule 100 source address '172.18.0.0/16'
+  - set nat source rule 100 translation address 'masquerade'
