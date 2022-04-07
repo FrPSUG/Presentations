@@ -1,0 +1,11 @@
+{
+  "version": "0.1.1",
+  "description": "Base windows server 2019 Standard GUI",
+  "vm_name": "Base_Server2K19_GUI",
+  "iso_checksum": "436AF9C7BD0330B1860A53E58407778AAE804FB22FF4816FF4E669B23E3FEDFC",
+  "iso_url": "http://localhost/en_windows_server_2019_updated_march_2021_x64_dvd_ec2626a1.iso",
+  "numvcpus": "4",
+  "ramsize": "8192",
+  "winrm_username": "Administrator",
+  "winrm_password": "123+aze"
+}

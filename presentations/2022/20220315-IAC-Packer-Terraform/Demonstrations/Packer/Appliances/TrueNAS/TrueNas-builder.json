@@ -1,0 +1,8 @@
+{
+  "builder_host": "10.30.103.11",
+  "builder_host_username": "root",
+  "builder_host_password": "MyRootP@$$w0rd!",
+  "builder_host_datastore": "FREENAS1_VOL2",
+  "builder_host_portgroup": "VM Network"
+}
+

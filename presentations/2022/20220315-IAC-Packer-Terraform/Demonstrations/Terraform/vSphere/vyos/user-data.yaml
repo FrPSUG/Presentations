@@ -1,0 +1,17 @@
+#cloud-config
+vyos_config_commands:
+  - set system host-name 'RTRLAB'
+  - set interfaces ethernet eth1 address '10.0.0.254/24'
+  - set interfaces ethernet eth2 address '172.18.0.254/24'
+  - set service dhcp-server shared-network-name LAN subnet 10.0.0.0/24 default-router '10.0.0.254'
+  - set service dhcp-server shared-network-name LAN subnet 10.0.0.0/24 dns-server '10.0.0.100'
+  - set service dhcp-server shared-network-name LAN subnet 10.0.0.0/24 domain-name 'VMware.lab'
+  - set service dhcp-server shared-network-name LAN subnet 10.0.0.0/24 range 0 start '10.0.0.1'
+  - set service dhcp-server shared-network-name LAN subnet 10.0.0.0/24 range 0 stop '10.0.0.79'
+  - set service dhcp-server shared-network-name LAN subnet 10.0.0.0/24 range 1 start '10.0.0.110'
+  - set service dhcp-server shared-network-name LAN subnet 10.0.0.0/24 range 1 stop '10.0.0.253'
+  - set service dhcp-server shared-network-name ISCSI subnet 172.18.0.0/24 range 2 start '172.18.0.1'
+  - set service dhcp-server shared-network-name ISCSI subnet 172.18.0.0/24 range 2 stop '172.18.0.55'
+  - set nat source rule 100 outbound-interface 'eth0'
+  - set nat source rule 100 source address '10.0.0.0/24'
+  - set nat source rule 100 translation address 'masquerade'

@@ -1,0 +1,11 @@
+{
+  "version": "0.1.1",
+  "description": "Base windows 10 x64 21H1",
+  "vm_name": "GI_Windows_10_x64_21H1_Ent",
+  "iso_checksum": "0FC1B94FA41FD15A32488F1360E347E49934AD731B495656A0A95658A74AD67F",
+  "iso_url": "http://localhost/en_windows_10_business_editions_version_21h1_x64_dvd_ec5a76c1.iso",
+  "numvcpus": "4",
+  "ramsize": "8192",
+  "winrm_username": "Administrator",
+  "winrm_password": "123+aze"
+}

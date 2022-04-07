@@ -1,0 +1,90 @@
+{
+  "variables": {
+    "ovftool_deploy_vcenter": "sco-labo-vcsa.ad.supalta.com",
+    "ovftool_deploy_esxi":"sco-labo-esx1.ad.supalta.com",
+    "ovftool_deploy_vcenter_username": "Administrator@vsphere.local",
+    "ovftool_deploy_vcenter_password": "MyS€cretP@$$w0rd!!",
+    "builder_host_datastore": "FREENAS1_VOL2",
+    "builder_host_portgroup": "VM Network"
+  },
+  "builders": [
+    {
+      "type": "vsphere-iso",
+      "CPUs": "{{ user `numvcpus` }}",
+      "RAM": "{{ user `ramsize` }}",
+      "RAM_reserve_all": true,
+      "firmware":"efi",
+      "boot_command": [
+        "<spacebar>"
+      ],
+      "guest_os_type": "windows9_64Guest",
+      "host": "{{ user `ovftool_deploy_esxi` }}",
+      "boot_wait": "2s",
+      "insecure_connection": true,
+      "iso_url": "{{ user `iso_url` }}",
+      "iso_checksum": "{{ user `iso_checksum` }}",
+      "datastore":"{{ user `builder_host_datastore` }}",
+      "network_adapters": [
+        {
+          "network":"{{ user `builder_host_portgroup` }}",
+          "network_card": "e1000"
+        }
+      ],
+      "password": "{{ user `ovftool_deploy_vcenter_password` }}",
+      "communicator":"winrm",
+          "winrm_username": "{{user `winrm_username`}}",
+          "winrm_password": "{{user `winrm_password`}}",
+          "winrm_insecure": true,
+          "winrm_timeout": "4h",
+          "floppy_files": [
+            "scripts/uefi/gui/autounattend.xml",
+            "scripts/uefi/gui/vmware-tools.ps1",
+            "scripts/uefi/gui/config-winrm.ps1",
+            "scripts/uefi/gui/install-winget.ps1"
+          ],
+          "shutdown_command": "shutdown /s /t 5 /f /d p:4:1 /c \"Packer Shutdown\"",
+          "shutdown_timeout": "30m",
+          "disk_controller_type": "lsilogic-sas",    
+      "storage": [
+        {
+          "disk_size": 131072,
+          "disk_thin_provisioned": true
+        }
+      ],
+      "username": "{{ user `ovftool_deploy_vcenter_username` }}",
+      "vcenter_server": "{{ user `ovftool_deploy_vcenter` }}",
+      "vm_name": "{{ user `vm_name` }}",
+      "notes": "Base Windows 10 Entreprise : {{ user `version` }} @JM2K69 | login : {{ user `winrm_username` }} MDP : {{ user `winrm_password` }} "
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "powershell",
+      "scripts": ["scripts/setup.ps1"]
+    },
+    {
+      "type": "windows-restart",
+      "restart_timeout": "30m"
+    },
+    {
+      "type": "powershell",
+      "scripts": ["scripts/install-bginfo.ps1"]
+    },
+    {
+      "type": "powershell",
+      "scripts": ["scripts/Invoke-RemoveBuiltinApps.ps1"]
+    },
+    {
+      "type": "windows-restart",
+      "restart_timeout": "30m"
+    },
+    {
+      "type": "powershell",
+      "scripts": ["scripts/disable-autologin.ps1"]
+    },
+    {
+      "type": "powershell",
+      "scripts": ["scripts/cleanup.ps1"]
+    }
+  ]
+}

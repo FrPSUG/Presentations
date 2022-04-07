@@ -1,0 +1,115 @@
+{
+  "variables": {
+    "ovftool_deploy_vcenter": "sco-labo-vcsa.ad.supalta.com",
+    "ovftool_deploy_esxi":"sco-labo-esx1.ad.supalta.com",
+    "ovftool_deploy_vcenter_username": "Administrator@vsphere.local",
+    "ovftool_deploy_vcenter_password": "MySecretP@$$w0rd!",
+    "builder_host_datastore": "FREENAS1_VOL2",
+    "builder_host_portgroup": "VM Network"
+  },
+  "builders": [
+    {
+      "type": "vsphere-iso",
+      "CPUs": "{{ user `numvcpus` }}",
+      "RAM": "{{ user `ramsize` }}",
+      "RAM_reserve_all": true,
+      "boot_command": [
+        "<wait5>1<enter><wait2>",
+        "<wait2><spacebar><wait2>",
+        "<wait2><enter><wait2>",
+        "<wait2><enter><wait2>",
+        "TrueNas123*<tab>TrueNas123*<tab><enter>",
+        "<enter>",
+        "<enter>",
+        "<wait2m><enter>3<enter>",
+        "<wait3m>9<enter>",
+        "<enter>",
+        "cli<wait2><enter>service ssh update rootlogin=true<enter>",
+        "service start service=ssh<enter><wait3>"
+      ],
+      "guest_os_type": "freebsd12_64Guest",
+      "host": "{{ user `ovftool_deploy_esxi` }}",
+      "boot_wait": "20s",
+      "insecure_connection": true,
+      "iso_url": "{{ user `iso_url` }}",
+      "iso_checksum": "{{ user `iso_checksum` }}",
+      "datastore":"{{ user `builder_host_datastore` }}",
+      "network_adapters": [
+        {
+          "network":"{{ user `builder_host_portgroup` }}",
+          "network_card": "vmxnet3"
+        }
+      ],
+      "password": "{{ user `ovftool_deploy_vcenter_password` }}",
+      "ssh_password": "{{ user `guest_password` }}",
+      "ssh_username": "{{ user `guest_username` }}",
+      "storage": [
+        {
+          "disk_size": 20480,
+          "disk_thin_provisioned": true
+        },
+        {
+          "disk_size": 61440,
+          "disk_thin_provisioned": true
+        },
+        {
+          "disk_size": 61440,
+          "disk_thin_provisioned": true
+        },
+        {
+          "disk_size": 61440,
+          "disk_thin_provisioned": true
+        },
+        {
+          "disk_size": 61440,
+          "disk_thin_provisioned": true
+        },
+        {
+          "disk_size": 61440,
+          "disk_thin_provisioned": true
+        },
+        {
+          "disk_size": 61440,
+          "disk_thin_provisioned": true
+        },
+        {
+          "disk_size": 61440,
+          "disk_thin_provisioned": true
+        },        {
+          "disk_size": 61440,
+          "disk_thin_provisioned": true
+        }
+      ],
+      "username": "{{ user `ovftool_deploy_vcenter_username` }}",
+      "vcenter_server": "{{ user `ovftool_deploy_vcenter` }}",
+      "vm_name": "{{ user `vm_name` }}",
+      "notes": "TrueNas Appliance version: {{ user `version` }} @JM2K69 | login : {{ user `guest_username` }} MDP : {{ user `guest_password` }} ",
+      "export":{
+        "force":true,
+        "manifest":"none",
+        "output_directory":"./output_directory"
+      }
+    }
+  ],
+  "post-processors": [
+
+    {
+        "type": "shell-local",
+        "inline": [
+          "pwsh -F Postprocess.ps1 {{ user `version` }}"
+        ]
+      },
+      {
+        "type": "shell-local",
+        "inline": [
+          "pwsh -F NotifsTeam.ps1 {{ user `vm_name` }} {{ user `guest_username` }} {{ user `guest_password` }} "
+        ]
+      },  
+    {
+      "type": "shell-local",
+      "inline": [
+        "pwsh -F unregister_vm.ps1 {{ user `ovftool_deploy_vcenter` }} {{ user `ovftool_deploy_vcenter_username` }} {{ user `ovftool_deploy_vcenter_password` }} {{ user `vm_name` }}"
+      ]
+    }
+  ]
+}

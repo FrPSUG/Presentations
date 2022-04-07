@@ -1,0 +1,51 @@
+{
+  "builders": [
+    {
+      "CPUs": "{{user `vm-cpu-num`}}",
+      "RAM": "{{user `vm-mem-size`}}",
+      "RAM_reserve_all": true,
+      "boot_command": ["<Tab>text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg<enter><wait>"],
+      "boot_order": "disk,cdrom",
+      "cluster": "{{user `cluster`}}",
+      "convert_to_template": "true",
+      "datacenter": "{{user `datacenter`}}",
+      "datastore": "{{user `datastore`}}",
+      "disk_controller_type": "pvscsi",
+      "folder": "{{user `folder`}}",
+      "guest_os_type": "centos8_64Guest",
+      "host": "{{user `host`}}",
+      "http_directory": "http",
+      "insecure_connection": "true",
+      "iso_checksum": "sha256:{{user `isochecksum`}}",
+      "iso_urls": "{{user `isourl`}}",
+      "network_adapters": [
+        {
+          "network": "{{user `network`}}",
+          "network_card": "vmxnet3"
+        }
+      ],
+      "password": "{{user `vcenter-password`}}",
+      "shutdown_command": "echo '{{user `ssh-password`}}' | sudo -S shutdown -P now",
+      "ssh_password": "{{user `ssh-password`}}",
+      "ssh_username": "{{user `ssh-username`}}",
+      "storage": [
+        {
+          "disk_size": "{{user `vm-disk-size`}}",
+          "disk_thin_provisioned": true
+        }
+      ],
+      "type": "vsphere-iso",
+      "username": "{{user `vcenter-username`}}",
+      "vcenter_server": "{{user `vcenter-server`}}",
+      "vm_name": "{{user `vm-name`}}"
+    }
+  ],
+  "provisioners": [
+    {
+      "inline": [
+        "echo 'Packer Template Build -- Complete'"
+      ],
+      "type": "shell"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "vm_name": "Ubuntu-FRPSUG",  
+  "vcenter_server":"sco-labo-vcsa.ad.supalta.com",
+  "vcenter_username":"administrator@vsphere.local",
+  "vcenter_password":"MyS€cretP@$$w0rd!!",
+  "vcenter_datacenter": "Datacenter",
+  "vcenter_datastore": "FREENAS1_VOL1",
+  "vcenter_host": "sco-labo-esx2.ad.supalta.com",
+  "vcenter_folder": "Templates",
+  "vcenter_network": "VM Network",
+  "guest_os_type": "ubuntu64Guest",
+  "http_directory": "http",
+  "iso_url": "https://releases.ubuntu.com/21.10/ubuntu-21.10-live-server-amd64.iso",
+  "iso_checksum_type": "sha256",
+  "iso_checksum": "e84f546dfc6743f24e8b1e15db9cc2d2c698ec57d9adfb852971772d1ce692d4",
+  "ssh_username": "ubuntu",
+  "ssh_password": "Ubuntu*"
+}
